@@ -6,7 +6,7 @@
 每种语言一个 JSON 文件，包含用户看到的所有文本，以及机器人能够识别的短语（“Schedule”、“Schedule for tomorrow”、“Расписание на пятницу”）。
 
 [![Check](https://github.com/Schedulty/locales/actions/workflows/check.yml/badge.svg)](https://github.com/Schedulty/locales/actions/workflows/check.yml)
-[![npm](https://img.shields.io/npm/v/@schedulty/locales)](https://www.npmjs.com/package/@schedulty/locales)
+[![Package](https://img.shields.io/github/v/tag/Schedulty/locales?label=package)](https://github.com/Schedulty/locales/pkgs/npm/locales)
 
 ## 语言
 
@@ -17,11 +17,28 @@
 
 没有你的语言？欢迎[添加](./CONTRIBUTING.md#add-a-language)或[提出请求](https://github.com/Schedulty/locales/issues/new?template=new-language.yml)。
 
-## 使用
+## 安装
 
-```sh
-npm install @schedulty/locales i18next
-```
+本包发布在 [GitHub Packages](https://github.com/Schedulty/locales/pkgs/npm/locales)。即使是公开包，GitHub 也要求提供令牌：
+
+1. 创建一个带有 `read:packages` 权限的
+   [personal access token (classic)](https://github.com/settings/tokens/new?scopes=read:packages)。
+2. 在项目的 `.npmrc`（或 `~/.npmrc`）中添加注册表：
+
+   ```ini
+   @schedulty:registry=https://npm.pkg.github.com
+   //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+   ```
+
+3. 将令牌放入环境变量 `GITHUB_TOKEN`，然后安装：
+
+   ```sh
+   npm install @schedulty/locales i18next
+   ```
+
+在 GitHub Actions 中 `GITHUB_TOKEN` 已经存在；在 job 的 `permissions` 中添加 `packages: read` 即可。
+
+## 使用
 
 ```js
 import i18next from 'i18next';

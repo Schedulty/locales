@@ -7,7 +7,7 @@
 пользователь, и фразы, которые понимает бот («Расписание», «Расписание на завтра», «Schedule for friday»).
 
 [![Check](https://github.com/Schedulty/locales/actions/workflows/check.yml/badge.svg)](https://github.com/Schedulty/locales/actions/workflows/check.yml)
-[![npm](https://img.shields.io/npm/v/@schedulty/locales)](https://www.npmjs.com/package/@schedulty/locales)
+[![Package](https://img.shields.io/github/v/tag/Schedulty/locales?label=package)](https://github.com/Schedulty/locales/pkgs/npm/locales)
 
 ## Языки
 
@@ -19,11 +19,29 @@
 Нет вашего языка? [Добавьте его](./CONTRIBUTING.md#add-a-language) или
 [попросите о нём](https://github.com/Schedulty/locales/issues/new?template=new-language.yml).
 
-## Использование
+## Установка
 
-```sh
-npm install @schedulty/locales i18next
-```
+Пакет опубликован в [GitHub Packages](https://github.com/Schedulty/locales/pkgs/npm/locales). GitHub требует токен
+даже для публичных пакетов:
+
+1. Создайте [personal access token (classic)](https://github.com/settings/tokens/new?scopes=read:packages) с правом
+   `read:packages`.
+2. Добавьте реестр в `.npmrc` проекта (или в `~/.npmrc`):
+
+   ```ini
+   @schedulty:registry=https://npm.pkg.github.com
+   //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+   ```
+
+3. Положите токен в переменную окружения `GITHUB_TOKEN` и установите пакет:
+
+   ```sh
+   npm install @schedulty/locales i18next
+   ```
+
+В GitHub Actions `GITHUB_TOKEN` уже задан; добавьте `packages: read` в `permissions` задачи.
+
+## Использование
 
 ```js
 import i18next from 'i18next';

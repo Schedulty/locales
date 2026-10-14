@@ -7,7 +7,7 @@ a bot for Telegram and VK, notifications, and a website. One JSON file per langu
 plus the phrases the bot understands ("Schedule", "Schedule for tomorrow", "Расписание на пятницу").
 
 [![Check](https://github.com/Schedulty/locales/actions/workflows/check.yml/badge.svg)](https://github.com/Schedulty/locales/actions/workflows/check.yml)
-[![npm](https://img.shields.io/npm/v/@schedulty/locales)](https://www.npmjs.com/package/@schedulty/locales)
+[![Package](https://img.shields.io/github/v/tag/Schedulty/locales?label=package)](https://github.com/Schedulty/locales/pkgs/npm/locales)
 
 ## Languages
 
@@ -19,11 +19,29 @@ plus the phrases the bot understands ("Schedule", "Schedule for tomorrow", "Ра
 Your language is missing? [Add it](./CONTRIBUTING.md#add-a-language) or
 [ask for it](https://github.com/Schedulty/locales/issues/new?template=new-language.yml).
 
-## Use
+## Install
 
-```sh
-npm install @schedulty/locales i18next
-```
+The package is published to [GitHub Packages](https://github.com/Schedulty/locales/pkgs/npm/locales). GitHub asks for
+a token even for public packages:
+
+1. Create a [personal access token (classic)](https://github.com/settings/tokens/new?scopes=read:packages) with the
+   `read:packages` scope.
+2. Add the registry to `.npmrc` in your project (or in `~/.npmrc`):
+
+   ```ini
+   @schedulty:registry=https://npm.pkg.github.com
+   //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+   ```
+
+3. Put the token in the `GITHUB_TOKEN` environment variable and install:
+
+   ```sh
+   npm install @schedulty/locales i18next
+   ```
+
+In GitHub Actions, `GITHUB_TOKEN` is already set; add `packages: read` to the job's `permissions`.
+
+## Use
 
 ```js
 import i18next from 'i18next';

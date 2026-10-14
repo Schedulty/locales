@@ -35,6 +35,9 @@
     "index.d.ts",
     "*_*.json"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "check": "node scripts/check.mjs",
     "test": "node --test && node scripts/check.mjs",
