@@ -1,0 +1,47 @@
+{
+  "name": "@schedulty/locales",
+  "version": "1.0.0",
+  "description": "Translations for Schedulty: the schedule bot, its notifications and website",
+  "keywords": [
+    "schedulty",
+    "i18n",
+    "i18next",
+    "locales",
+    "translations"
+  ],
+  "homepage": "https://github.com/Schedulty/locales#readme",
+  "bugs": {
+    "url": "https://github.com/Schedulty/locales/issues",
+    "email": "locale@schedulty.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schedulty/locales.git"
+  },
+  "license": "MIT",
+  "author": "Schedulty",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./locales/*.json": "./*.json",
+    "./*.json": "./*.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "*_*.json"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test && node scripts/check.mjs",
+    "build": "node scripts/build.mjs",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

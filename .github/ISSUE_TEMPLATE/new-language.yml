@@ -1,0 +1,18 @@
+name: New language
+description: Ask for a language, or offer to translate it
+labels: [new language]
+body:
+  - type: input
+    id: locale
+    attributes:
+      label: Language and region
+      description: As in the file name, language_REGION
+      placeholder: uk_UA
+    validations:
+      required: true
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can translate it and keep it up to date

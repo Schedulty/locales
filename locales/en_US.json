@@ -1,0 +1,148 @@
+{
+  "common": {
+    "schoolTypes": {
+      "university": "University",
+      "school": "School",
+      "college": "College"
+    },
+    "weekParity": {
+      "first": "first week",
+      "second": "second week"
+    },
+    "units": {
+      "day_one": "day",
+      "day_other": "days",
+      "week_one": "week",
+      "week_other": "weeks"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "clear": "Clear"
+    }
+  },
+  "bot": {
+    "commands": {
+      "help": {
+        "button": "Help",
+        "description": "Show help",
+        "text": "Here is what I can do:",
+        "item": "{{command}} — {{description}}"
+      },
+      "info": {
+        "button": "Schedule info",
+        "description": "Information about the selected schedule",
+        "text": "Schedule of group “{{group}}”\nLast updated on {{date}} at {{time}}"
+      },
+      "links": {
+        "button": "Links",
+        "description": "Links to our communities",
+        "text": "Website: https://schedulty.ru\nTelegram: https://t.me/schedulty_bot\nVK: https://vk.me/schedulty_bot"
+      },
+      "now": {
+        "button": "Now",
+        "description": "Current time, weekday, date and week",
+        "text": "It is {{time}}, {{weekday}}, {{date}}, {{week}}"
+      },
+      "ping": {
+        "triggers": ["ping", "/ping"],
+        "description": "Check that the bot answers",
+        "text": "pong"
+      },
+      "schedule": {
+        "button": "Schedule",
+        "triggers": ["timetable"],
+        "patterns": ["schedule for {date}", "schedule {date}", "{date} schedule", "timetable for {date}"],
+        "description": "Show the schedule: “Schedule”, “Schedule for tomorrow”, “Schedule for friday”, “Schedule for 10/11”",
+        "empty": "No classes, time to rest",
+        "title": "{{weekday}}, {{date}}, {{week}}",
+        "lessonCount_one": "{{count}} class",
+        "lessonCount_other": "{{count}} classes",
+        "weekTitle": "Week of {{from}} – {{to}}, {{week}}"
+      },
+      "start": {
+        "button": "Configure",
+        "triggers": ["/start", "setup"],
+        "description": "Choose your city, school and group"
+      },
+      "status": {
+        "triggers": ["status", "/status"],
+        "description": "Service status",
+        "text": "Services:",
+        "ok": "{{service}}: up, {{ms}} ms",
+        "failed": "{{service}}: error {{code}}"
+      }
+    },
+    "dates": {
+      "today": ["today"],
+      "tomorrow": ["tomorrow"],
+      "dayAfterTomorrow": ["day after tomorrow", "the day after tomorrow"],
+      "weekday": ["{weekday}", "on {weekday}"],
+      "nextWeekday": ["next {weekday}", "on next {weekday}"],
+      "thisWeekday": ["this {weekday}", "on this {weekday}"],
+      "in": ["in a {day}", "in a {week}", "in {n} {day}", "in {n} {week}"],
+      "dayUnits": ["day", "days"],
+      "weekUnits": ["week", "weeks"],
+      "week": ["week", "this week", "the week"],
+      "nextWeek": ["next week", "the next week"],
+      "monthDay": ["{month} {n}", "{n} {month}"],
+      "weekdays": {
+        "monday": ["monday", "mon"],
+        "tuesday": ["tuesday", "tue"],
+        "wednesday": ["wednesday", "wed"],
+        "thursday": ["thursday", "thu"],
+        "friday": ["friday", "fri"],
+        "saturday": ["saturday", "sat"],
+        "sunday": ["sunday", "sun"]
+      },
+      "months": {
+        "january": ["january", "jan"],
+        "february": ["february", "feb"],
+        "march": ["march", "mar"],
+        "april": ["april", "apr"],
+        "may": ["may"],
+        "june": ["june", "jun"],
+        "july": ["july", "jul"],
+        "august": ["august", "aug"],
+        "september": ["september", "sep", "sept"],
+        "october": ["october", "oct"],
+        "november": ["november", "nov"],
+        "december": ["december", "dec"]
+      }
+    },
+    "errors": {
+      "unknownCommand": "I don’t know this command. Press “Help” to see what I can do",
+      "unavailable": "The service is temporarily unavailable, please try again in a minute",
+      "generic": "Something went wrong. Please try again later",
+      "busy": "I am still working on your previous message. Please send this one again in a few seconds",
+      "voiceNotRecognized": "Could not recognize the voice message. Please type it instead",
+      "groupGone": "Your group is no longer in the schedule. Please choose it again"
+    },
+    "wizard": {
+      "city": "Type your city or pick it from the buttons",
+      "cityNotFound": "We don't know any schools in this city yet\nPlease pick another one",
+      "school": "Type the name of your school or pick it from the buttons",
+      "schoolNotFound": "School not found\nPlease pick another one",
+      "faculty": "Pick your faculty or type its name",
+      "facultyNotFound": "Faculty not found\nPlease pick another one",
+      "group": "Pick your group",
+      "groupNotFound": "Group not found\nPlease pick another one",
+      "done": "All set!\nPress or type “Schedule” to see today's schedule\nTo pick another group, type “Configure”"
+    },
+    "cancelable": {
+      "hint": "To cancel, send “Cancel”",
+      "done": "Cancelled"
+    },
+    "pagination": {
+      "first": "First page",
+      "prev": "Previous page",
+      "next": "Next page",
+      "last": "Last page",
+      "page": "Page {{page}} of {{pages}}"
+    },
+    "typeahead": {
+      "found": "Found {{found}} of {{total}}. To reset the filter, send “Clear”",
+      "notFound": "No matches",
+      "cleared": "Filter reset"
+    }
+  }
+}
