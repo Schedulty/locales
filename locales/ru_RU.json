@@ -24,10 +24,30 @@
       "clear": "Очистить",
       "yes": "Да",
       "no": "Нет"
+    },
+    "dateTimeFormat": {
+      "dateOrder": {
+        "default": "Как принято для языка ({{example}})",
+        "dmy": "День, месяц, год ({{example}})",
+        "mdy": "Месяц, день, год ({{example}})",
+        "ymd": "Год, месяц, день ({{example}})"
+      },
+      "hourCycle": {
+        "default": "Как принято для языка ({{example}})",
+        "h23": "24 часа ({{example}})",
+        "h12": "12 часов ({{example}})"
+      }
     }
   },
   "bot": {
     "commands": {
+      "dateFormat": {
+        "triggers": ["/dateformat", "формат даты"],
+        "description": "Выбрать, как показывать даты",
+        "current": "Сейчас дата выглядит так: {{example}}",
+        "choose": "Выберите формат даты",
+        "done": "Готово. Теперь дата выглядит так: {{example}}"
+      },
       "help": {
         "button": "Справка",
         "triggers": ["помощь"],
@@ -109,6 +129,13 @@
         "text": "Сервисы:",
         "ok": "{{service}}: работает, {{ms}} мс",
         "failed": "{{service}}: ошибка {{code}}"
+      },
+      "timeFormat": {
+        "triggers": ["/timeformat", "формат времени"],
+        "description": "Выбрать, как показывать время",
+        "current": "Сейчас время выглядит так: {{example}}",
+        "choose": "Выберите формат времени",
+        "done": "Готово. Теперь время выглядит так: {{example}}"
       }
     },
     "dates": {

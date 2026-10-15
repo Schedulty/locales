@@ -20,10 +20,30 @@
       "clear": "Clear",
       "yes": "Yes",
       "no": "No"
+    },
+    "dateTimeFormat": {
+      "dateOrder": {
+        "default": "Language default ({{example}})",
+        "dmy": "Day, month, year ({{example}})",
+        "mdy": "Month, day, year ({{example}})",
+        "ymd": "Year, month, day ({{example}})"
+      },
+      "hourCycle": {
+        "default": "Language default ({{example}})",
+        "h23": "24-hour ({{example}})",
+        "h12": "12-hour ({{example}})"
+      }
     }
   },
   "bot": {
     "commands": {
+      "dateFormat": {
+        "triggers": ["/dateformat", "date format"],
+        "description": "Choose how dates are shown",
+        "current": "Dates now look like {{example}}",
+        "choose": "Choose a date format",
+        "done": "Done. Dates now look like {{example}}"
+      },
       "help": {
         "button": "Help",
         "description": "Show help",
@@ -101,6 +121,13 @@
         "text": "Services:",
         "ok": "{{service}}: up, {{ms}} ms",
         "failed": "{{service}}: error {{code}}"
+      },
+      "timeFormat": {
+        "triggers": ["/timeformat", "time format"],
+        "description": "Choose how times are shown",
+        "current": "Times now look like {{example}}",
+        "choose": "Choose a time format",
+        "done": "Done. Times now look like {{example}}"
       }
     },
     "dates": {

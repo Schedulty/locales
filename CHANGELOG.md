@@ -6,6 +6,11 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
+## 1.0.3
+
+- Texts for the date format and time format settings: `common.dateTimeFormat` (date order and clock options),
+  `bot.commands.dateFormat` and `bot.commands.timeFormat`.
+
 ## 1.0.2
 
 - Texts for account linking (`bot.commands.link`) and the referral system (`bot.commands.invite`,
