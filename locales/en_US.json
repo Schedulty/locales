@@ -17,7 +17,9 @@
     },
     "actions": {
       "cancel": "Cancel",
-      "clear": "Clear"
+      "clear": "Clear",
+      "yes": "Yes",
+      "no": "No"
     }
   },
   "bot": {
@@ -32,6 +34,24 @@
         "button": "Schedule info",
         "description": "Information about the selected schedule",
         "text": "Schedule of group “{{group}}”\nLast updated on {{date}} at {{time}}"
+      },
+      "invite": {
+        "triggers": ["/invite", "invite"],
+        "description": "Invite friends and see how many people you have invited",
+        "text": "Your invite code: {{code}}\nLink for friends: {{link}}\nYou have invited {{invited}}",
+        "invited_one": "{{count}} person",
+        "invited_other": "{{count}} people"
+      },
+      "link": {
+        "triggers": ["/link", "link accounts"],
+        "description": "Link your accounts in different messengers",
+        "code": "Your code: {{code}}\nSend “/link {{code}}” to the bot in another messenger before {{time}}, {{date}}. The code works once",
+        "confirm": "The group and settings of this account will be replaced by those of the account where you got the code. Continue?",
+        "done": "Done, your accounts are linked. Notifications will go to the messenger you last wrote to the bot in",
+        "invalidCode": "The code is unknown or has expired. Get a new one: send “/link” in the other messenger",
+        "ownCode": "This code belongs to this account. Send it to the bot in another messenger",
+        "platformTaken": "Both accounts already have a profile in the same messenger, and each messenger allows only one profile",
+        "tooManyAttempts": "Too many wrong codes. Try again later"
       },
       "links": {
         "button": "Links",
@@ -58,6 +78,17 @@
         "lessonCount_one": "{{count}} class",
         "lessonCount_other": "{{count}} classes",
         "weekTitle": "Week of {{from}} – {{to}}, {{week}}"
+      },
+      "setReferrer": {
+        "triggers": ["/setreferrer"],
+        "description": "Enter the code of the person who invited you",
+        "usage": "Send “/setreferrer” followed by the invite code, for example “/setreferrer AB12CD34”",
+        "done": "Thanks! We saved who invited you",
+        "alreadySet": "Your inviter is already set and can’t be changed",
+        "windowClosed": "You can set your inviter only shortly after you first start the bot, and that time has passed",
+        "unknownCode": "Invite code not found. Check it and send it again",
+        "self": "You can’t use your own code",
+        "cycle": "You invited this person, so they can’t be your inviter"
       },
       "start": {
         "button": "Configure",
@@ -127,6 +158,10 @@
       "group": "Pick your group",
       "groupNotFound": "Group not found\nPlease pick another one",
       "done": "All set!\nPress or type “Schedule” to see today's schedule\nTo pick another group, type “Configure”"
+    },
+    "joinReferrerGroup": {
+      "question": "You were invited to Schedulty. Choose the same group as the person who invited you: “{{group}}” ({{school}})?",
+      "groupGone": "This group is no longer in the schedule. Choose your group"
     },
     "cancelable": {
       "hint": "To cancel, send “Cancel”",

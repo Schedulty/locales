@@ -6,7 +6,10 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
-## Unreleased
+## 1.0.2
+
+- Texts for account linking (`bot.commands.link`) and the referral system (`bot.commands.invite`,
+  `bot.commands.setReferrer`, `bot.joinReferrerGroup`), and `common.actions.yes`/`no`. Drafts
 
 ## 1.0.1
 
