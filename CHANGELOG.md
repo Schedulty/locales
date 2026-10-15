@@ -8,6 +8,11 @@ Versions follow these rules:
 
 ## Unreleased
 
+## 1.0.1
+
+- Published only to Schedulty's private registry to keep all packages in one place; GitHub Packages publishing stopped. Outside users copy the files
+  from `locales/`.
+
 ## 1.0.0
 
 - Hello world!

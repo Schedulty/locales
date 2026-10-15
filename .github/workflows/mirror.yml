@@ -1,0 +1,21 @@
+name: Mirror
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # No --force: a copy that diverged on GitLab fails the job instead of being overwritten.
+      - run: git push "https://oauth2:${GITLAB_MIRROR_TOKEN}@git.wbydc.io/schedulty/locales.git" "$GITHUB_SHA:$GITHUB_REF"
+        env:
+          GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_MIRROR_TOKEN }}

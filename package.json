@@ -1,6 +1,6 @@
 {
   "name": "@schedulty/locales",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translations for Schedulty: the schedule bot, its notifications and website",
   "keywords": [
     "schedulty",
@@ -35,9 +35,6 @@
     "index.d.ts",
     "*_*.json"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "check": "node scripts/check.mjs",
     "test": "node --test && node scripts/check.mjs",

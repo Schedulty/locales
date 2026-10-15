@@ -7,7 +7,7 @@
 пользователь, и фразы, которые понимает бот («Расписание», «Расписание на завтра», «Schedule for friday»).
 
 [![Check](https://github.com/Schedulty/locales/actions/workflows/check.yml/badge.svg)](https://github.com/Schedulty/locales/actions/workflows/check.yml)
-[![Package](https://img.shields.io/github/v/tag/Schedulty/locales?label=package)](https://github.com/Schedulty/locales/pkgs/npm/locales)
+[![Version](https://img.shields.io/github/v/tag/Schedulty/locales?label=version)](https://github.com/Schedulty/locales/tags)
 
 ## Языки
 
@@ -21,25 +21,9 @@
 
 ## Установка
 
-Пакет опубликован в [GitHub Packages](https://github.com/Schedulty/locales/pkgs/npm/locales). GitHub требует токен
-даже для публичных пакетов:
-
-1. Создайте [personal access token (classic)](https://github.com/settings/tokens/new?scopes=read:packages) с правом
-   `read:packages`.
-2. Добавьте реестр в `.npmrc` проекта (или в `~/.npmrc`):
-
-   ```ini
-   @schedulty:registry=https://npm.pkg.github.com
-   //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
-   ```
-
-3. Положите токен в переменную окружения `GITHUB_TOKEN` и установите пакет:
-
-   ```sh
-   npm install @schedulty/locales i18next
-   ```
-
-В GitHub Actions `GITHUB_TOKEN` уже задан; добавьте `packages: read` в `permissions` задачи.
+npm-пакет `@schedulty/locales` публикуется только в закрытый реестр Schedulty, для сервисов самого Schedulty.
+Чтобы использовать переводы в своём проекте, скопируйте JSON-файлы из [`locales/`](./locales): это обычные ресурсы
+[i18next](https://www.i18next.com) под лицензией MIT.
 
 ## Использование
 
