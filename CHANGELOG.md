@@ -6,6 +6,10 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
+## 1.0.4
+
+- `meta` section in every locale file: `name` (the language's own name) and `author`.
+
 ## 1.0.3
 
 - Texts for the date format and time format settings: `common.dateTimeFormat` (date order and clock options),

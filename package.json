@@ -1,6 +1,6 @@
 {
   "name": "@schedulty/locales",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Translations for Schedulty: the schedule bot, its notifications and website",
   "keywords": [
     "schedulty",
@@ -39,7 +39,8 @@
     "check": "node scripts/check.mjs",
     "test": "node --test && node scripts/check.mjs",
     "build": "node scripts/build.mjs",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "release": "git tag -a v$npm_package_version -m v$npm_package_version && git push --tags"
   },
   "engines": {
     "node": ">=20"

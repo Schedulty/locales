@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "name": "English (US)",
+    "author": "Schedulty"
+  },
   "common": {
     "schoolTypes": {
       "university": "University",

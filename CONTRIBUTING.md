@@ -30,6 +30,7 @@ npm test
 
 | Section | What it holds |
 |---|---|
+| `meta` | About the file: `name` is the language's name in that language (`Русский`, `Deutsch`), `author` is who wrote the translation (your name or GitHub handle) |
 | `common` | Texts every app uses: school types, week names, units, actions |
 | `bot` | The chat bot: commands, the setup wizard, date phrases |
 

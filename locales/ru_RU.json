@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "name": "Русский",
+    "author": "Schedulty"
+  },
   "common": {
     "schoolTypes": {
       "university": "Университет",
