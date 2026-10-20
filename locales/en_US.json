@@ -177,6 +177,8 @@
       "generic": "Something went wrong. Please try again later",
       "busy": "I am still working on your previous message. Please send this one again in a few seconds",
       "voiceNotRecognized": "Could not recognize the voice message. Please type it instead",
+      "voiceTooLong": "The voice message is too long to recognize. Please send a shorter one or type it instead",
+      "voiceUnavailable": "Voice messages cannot be recognized right now. Please type your message instead",
       "groupGone": "Your group is no longer in the schedule. Please choose it again"
     },
     "wizard": {
