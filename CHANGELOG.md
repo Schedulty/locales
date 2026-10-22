@@ -6,6 +6,11 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
+## 1.0.6
+
+- `bot.wizard.<step>Empty` (`cityEmpty`, `schoolEmpty`, `facultyEmpty`, `groupEmpty`): the list of a setup step is
+  empty and there is no earlier choice to go back to.
+
 ## 1.0.5
 
 - `bot.errors.voiceTooLong` and `bot.errors.voiceUnavailable`: why a voice message has no transcript.

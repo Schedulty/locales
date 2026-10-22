@@ -184,12 +184,16 @@
     "wizard": {
       "city": "Type your city or pick it from the buttons",
       "cityNotFound": "We don't know any schools in this city yet\nPlease pick another one",
+      "cityEmpty": "There are no cities with a schedule yet\nPlease try again later",
       "school": "Type the name of your school or pick it from the buttons",
       "schoolNotFound": "School not found\nPlease pick another one",
+      "schoolEmpty": "We don't know any schools in this city yet\nPlease try again later",
       "faculty": "Pick your faculty or type its name",
       "facultyNotFound": "Faculty not found\nPlease pick another one",
+      "facultyEmpty": "This school has no schedule yet\nPlease try again later",
       "group": "Pick your group",
       "groupNotFound": "Group not found\nPlease pick another one",
+      "groupEmpty": "This faculty has no groups yet\nPlease try again later",
       "done": "All set!\nPress or type “Schedule” to see today's schedule\nTo pick another group, type “Configure”"
     },
     "joinReferrerGroup": {
