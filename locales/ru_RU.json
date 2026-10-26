@@ -131,8 +131,22 @@
         "triggers": ["status", "/status"],
         "description": "Состояние сервисов",
         "text": "Сервисы:",
-        "ok": "{{service}}: работает, {{ms}} мс",
-        "failed": "{{service}}: ошибка {{code}}"
+        "service": "{{name}}: {{state}} · сутки {{day}} · 30 дней {{month}}",
+        "states": {
+          "UP": "работает",
+          "DEGRADED": "работает частично",
+          "DOWN": "не работает",
+          "UNKNOWN": "нет данных"
+        },
+        "noUptime": "—",
+        "details": "  реплики {{ready}}/{{desired}} · версия {{version}} · {{ms}} мс",
+        "queues": "Очереди RabbitMQ с сообщениями:",
+        "queue": "{{name}}: {{messages}}, потребителей {{consumers}}",
+        "queuesEmpty": "Очереди RabbitMQ пусты.",
+        "queuesUnavailable": "Очереди RabbitMQ недоступны.",
+        "outbox": "Исходящих сообщений в очереди: {{total}}",
+        "outboxUnavailable": "Исходящая очередь недоступна.",
+        "unavailable": "Статус сейчас недоступен ({{code}})."
       },
       "timeFormat": {
         "triggers": ["/timeformat", "формат времени"],

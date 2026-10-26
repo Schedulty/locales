@@ -6,6 +6,12 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
+## 1.0.7
+
+- `bot.commands.status` rewritten for the platform status from status-service: `service`, `states`, `noUptime`,
+  `details`, `queues`, `queue`, `queuesEmpty`, `queuesUnavailable`, `outbox`, `outboxUnavailable`, `unavailable`.
+  `ok` and `failed` are removed: the bot no longer probes services itself.
+
 ## 1.0.6
 
 - `bot.wizard.<step>Empty` (`cityEmpty`, `schoolEmpty`, `facultyEmpty`, `groupEmpty`): the list of a setup step is

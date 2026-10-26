@@ -123,8 +123,22 @@
         "triggers": ["status", "/status"],
         "description": "Service status",
         "text": "Services:",
-        "ok": "{{service}}: up, {{ms}} ms",
-        "failed": "{{service}}: error {{code}}"
+        "service": "{{name}}: {{state}} · day {{day}} · 30 days {{month}}",
+        "states": {
+          "UP": "up",
+          "DEGRADED": "partly up",
+          "DOWN": "down",
+          "UNKNOWN": "no data"
+        },
+        "noUptime": "—",
+        "details": "  replicas {{ready}}/{{desired}} · version {{version}} · {{ms}} ms",
+        "queues": "RabbitMQ queues with messages:",
+        "queue": "{{name}}: {{messages}}, consumers {{consumers}}",
+        "queuesEmpty": "RabbitMQ queues are empty.",
+        "queuesUnavailable": "RabbitMQ queues are unavailable.",
+        "outbox": "Outgoing messages queued: {{total}}",
+        "outboxUnavailable": "The outgoing queue is unavailable.",
+        "unavailable": "Status is unavailable right now ({{code}})."
       },
       "timeFormat": {
         "triggers": ["/timeformat", "time format"],
