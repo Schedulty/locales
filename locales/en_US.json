@@ -48,6 +48,11 @@
         "choose": "Choose a date format",
         "done": "Done. Dates now look like {{example}}"
       },
+      "export": {
+        "button": "My data",
+        "description": "Download all my data as one archive",
+        "text": "Your data archive: {{url}}\nThe link works for {{hours}} h. A new archive is built once a day"
+      },
       "help": {
         "button": "Help",
         "description": "Show help",

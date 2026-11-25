@@ -6,6 +6,10 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
+## 1.0.8
+
+- `bot.commands.export` for the personal data export: `button`, `description`, `text` (`{{url}}`, `{{hours}}`).
+
 ## 1.0.7
 
 - `bot.commands.status` rewritten for the platform status from status-service: `service`, `states`, `noUptime`,
