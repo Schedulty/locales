@@ -6,6 +6,11 @@ Versions follow these rules:
 - **minor**: a new language, or a big change to an existing one;
 - **patch**: fixes and small additions.
 
+## 1.0.9
+
+- `bot.commands.export`: `text` now says the link will follow; new `ready` (`{{url}}`, `{{hours}}`) and `failed`,
+  sent when the archive is built in the background.
+
 ## 1.0.8
 
 - `bot.commands.export` for the personal data export: `button`, `description`, `text` (`{{url}}`, `{{hours}}`).

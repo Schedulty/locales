@@ -51,7 +51,9 @@
       "export": {
         "button": "My data",
         "description": "Download all my data as one archive",
-        "text": "Your data archive: {{url}}\nThe link works for {{hours}} h. A new archive is built once a day"
+        "text": "Building an archive of your data. I will send the link in a separate message as soon as it is ready",
+        "ready": "Your data archive is ready: {{url}}\nThe link works for {{hours}} h. A new archive is built once a day",
+        "failed": "Could not build the archive of your data. Please try again later"
       },
       "help": {
         "button": "Help",
